@@ -1,0 +1,22 @@
+{
+	"name": "com.mauri.adapta-nokto-for-unity",
+	"version": "1.0.0",
+	"displayName": "Adapta Nokto Theme for Unity",
+	"description": "A Unity Editor theme matched to the Adwaita Nokto GNOME theme used by Manjaro Linux.",
+	"unity": "2020.3",
+	"changelogUrl": "https://github.com/mauricepape/adapta-nokto-for-unity/blob/master/CHANGELOG.md",
+	"licensesUrl": "https://github.com/mauricepape/adapta-nokto-for-unity/blob/master/LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mauricepape/adapta-nokto-for-unity.git"
+	},
+	"keywords": [
+		"adapta nokto",
+		"custom",
+		"theme"
+	],
+	"author": {
+		"name": "Mauri",
+		"url": "https://forum.unity.com/members/mauri.29976/"
+	}
+}
