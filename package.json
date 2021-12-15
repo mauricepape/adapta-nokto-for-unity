@@ -1,6 +1,6 @@
 {
 	"name": "com.mauri.adapta-nokto-for-unity",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"displayName": "Adapta Nokto Theme for Unity",
 	"description": "A Unity Editor theme matched to the Adwaita Nokto GNOME theme used by Manjaro Linux.",
 	"unity": "2020.3",

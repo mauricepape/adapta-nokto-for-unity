@@ -12,7 +12,7 @@
 /* https://docs.unity3d.com/Manual/UIE-USS-Selectors.html */
 /* https://docs.unity3d.com/Manual/UIE-USS-SupportedProperties.html */
 /* https://docs.unity3d.com/Manual/UIE-USS-PropertyTypes.html */
-/* https://docs.unity3d.com/2019.1/Documentation/Manual/UIE-USS-WritingStyleSheets.html */
+/* https://docs.unity3d.com/Manual/UIE-USS-WritingStyleSheets.html */
 
 
 
@@ -105,12 +105,12 @@
 .AppCommandMid:active {
     background-color: #16A085;
 }
-/*.AppCommandMid:checked {
-    background-color: #d9db48;
+.AppCommandMid:checked {
+    background-color: #16A085;
 }
 .AppCommandMid:checked:hover {
-    background-color: #ff0000;
-}*/
+    background-color: #16A085;
+}
 
 /* Available Custom Editor Tools and Step button (the one next to the Pause button) */
 .AppCommandRight {
@@ -276,7 +276,6 @@
 	border-color: #465157;
 	border-top-color: #465157;
 	border-bottom-color: #465157;
-	color: #ff0000;
 }
 .ToolbarSeachTextFieldPopup:focus:active {
 	background-color: #29353B;
@@ -353,9 +352,7 @@
 	background-color: #29353B;
 	color: #FFFFFF;
 }
-.ToolbarPopupLeft:checked {
-	background-color: #ff0;
-}
+
 .ToolbarPopup {
 	background-color: #182328;
 }
@@ -363,9 +360,7 @@
 	background-color: #29353B;
 	color: #FFFFFF;
 }
-.ToolbarPopup:checked {
-	background-color: #ff0;
-}
+
 
 /* Used when searching for Assets */
 .ExposablePopupItem {
@@ -378,7 +373,7 @@
 }
 .ExposablePopupItem:active {
 	background-color: #16A085;
-	border-radius: 4px 4px; /* 9px gives a more rounded look */
+	border-radius: 4px 4px;
 	color: #FFFFFF;
 }
 .ExposablePopupItem:checked {
@@ -395,31 +390,31 @@
 
 /* This colors most of the Buttons */
 .Button, .minibutton {
-    background-color: #29353B;
-	border-color: #222C31;
-	border-bottom-color: #495358;
+    background-color: #304048; /*29353B*/
+	border-color: #495358;
+	border-bottom-color: #222C31;
 }
 .Button:hover, .minibutton:hover {
-    background-color: #304048;
+    background-color: #35464F;
 }
 .Button:active, .minibutton:active {
     background-color: #16A085;
 	border-color: #222C31;
-	border-bottom-color: #495358;
+	border-bottom-color: #222C31;
 }
 
 .AC-Button {
-    background-color: #29353B;
-	border-color: #222C31;
-	border-bottom-color: #495358;
+    background-color: #304048;
+	border-color: #495358;
+	border-bottom-color: #222C31;
 }
 .AC-Button:hover {
-    background-color: #304048;
+    background-color: #35464F;
 }
 .AC-Button:active {
     background-color: #16A085;
-	border-color: #222C31;
-	border-bottom-color: #495358;
+	border-color: #495358;
+	border-bottom-color: #222C31;
 }
 
 
@@ -466,37 +461,21 @@
 }
 
 
-/*Toggle {
-    background-color: #ff0;
-    border-top-color: rgb(196, 198, 198);
-    border-bottom-color: rgb(196, 198, 198);
-    border-left-color: rgb(196, 198, 198);
-    border-right-color: rgb(196, 198, 198);
-}*/
-
-toggle.label {
-	color: #cfd8dd;
-}
-toggle.label:hover {
-    color: #cfd8dd;
-}
-toggle.label:active {
-    color: #cfd8dd;
-}
-
 .DropDownButton {
-    background-color: #29353B;
-	border-color: #222C31;
-	border-bottom-color: #495358;
+    background-color: #304048;
+	border-color: #495358;
+	border-bottom-color: #222C31;
 }
 .DropDownButton:hover {
-    background-color: #304048;
+    background-color: #35464F;
+	border-color: #495358;
+	border-bottom-color: #222C31;
 	color: #FFFFFF;
 }
 .DropDownButton:active {
     background-color: #16A085;
-	border-color: #222C31;
-	border-bottom-color: #495358;
+	border-color: #495358;
+	border-bottom-color: #222C31;
 	color: #FFFFFF;
 }
 
@@ -732,7 +711,7 @@ toggle.label:active {
 
 /* Used by the wide border in the Hierarchy and its hover effect */
 .WhiteBackground {
-	background-color: #b8c1d9; /* default: b8c1d9 */
+	background-color: #B8C1D9;
 }
 
 /* Used by the Build Settings window and likely other windows */
@@ -892,24 +871,14 @@ toggle.label:active {
 /*             Testing Grounds              */
 /********************************************/
 
+PreBackground,
 #IN-Footer {
-    background-color: #4b5058; /*9497a6*/
+	background-image: none;
+    background-color: #222C31;
 }
 
 #IN-BigTitle {
     background-color: #182328;
-}
-#IN-BigTitle > .ControlLabel {
-    color: #000000;
-}
-#IN-BigTitle > .ControlLabel:focus {
-    color: #000000;
-}
-#IN-BigTitle > .ControlLabel:active {
-    color: #ff0;
-}
-#IN-BigTitle > .ControlLabel:hover {
-    color: #ff0000;
 }
 
 .IN-Title {
@@ -980,7 +949,7 @@ TextField:focus:hover {
 	color: #FFFFFF;
 }
 
-ObjectField {
+ObjectField, ColorField {
     background-color: #253035;
 	border-top-color: #1E272C;
     border-bottom-color: #495358;
@@ -996,14 +965,14 @@ ObjectField:hover {
     border-right-color: #1E272C;
 	color: #FFFFFF;
 }
-ObjectField:focus {
+ObjectField:focus, ColorField:focus {
 	border-top-color: #1E272C;
     border-bottom-color: #495358;
     border-left-color: #1E272C;
     border-right-color: #1E272C;
 	color: #FFFFFF;
 }
-ObjectField:focus:hover {
+ObjectField:focus:hover, ColorField:focus:hover {
 	border-top-color: #1E272C;
     border-bottom-color: #495358;
     border-left-color: #1E272C;
@@ -1013,7 +982,7 @@ ObjectField:focus:hover {
 ObjectFieldButton {
     background-color: #253035;
 }
-ObjectFieldButton:hover {
+ObjectFieldButton:hover, ColorField:hover {
     background-color: #304048; /*more light: #495358*/
 }
 
@@ -1080,6 +1049,9 @@ HorizontalSliderThumb {
     border-right-color: #1E272C;
 }
 
+.RL-Header {
+	background-color: #1F282D;
+}
 .RL-Empty-Header {
 	background-color: #1F282D;
 }
@@ -1096,7 +1068,7 @@ HorizontalSliderThumb {
 .RL-Footer {
 	background-color: #1F282D;
 }
-.RL-FooterButton:hover {
+.RL-FooterButton:hover, .TE-ToolbarDropDown:hover {
 	background-color: #304048;
 }
 .RL-FooterButton:active {
@@ -1142,4 +1114,14 @@ HorizontalSliderThumb {
 .SearchModeFilter:active, .SearchModeFilter:checked {
     background-color: #16A085;
 	color: #FFFFFF;
+}
+
+ScriptText {
+    background-color: #222C31;
+}
+
+/* Used by e.g. the Stats window */
+Window {
+	background-color: #29353B;
+	border-radius: 5px;
 }
